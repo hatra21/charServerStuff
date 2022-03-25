@@ -7,9 +7,9 @@ public class chatClient {
         Socket s = new Socket("localhost", 2222);
 
         Scanner clientInput = new Scanner(s.getInputStream());
-        String name = clientInput.nextLine();
+        String serverMsg = clientInput.nextLine();
 
-        System.out.println("read: " + name);
+        System.out.println("read: " + serverMsg);
 
         Scanner scan = new Scanner(System.in);
         String myName = scan.nextLine();
